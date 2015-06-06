@@ -1,0 +1,30 @@
+$ratio: (1/1.618);
+$strength: 2px;
+$color: #222;
+$color2: #FF0;
+$mix: 50%;
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: $color;
+}
+
+.ratio {
+  font-size: ceil(pow(1/$ratio,12))*1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  border-radius: 0 0 0 100%;
+  box-shadow: 
+    -1*$strength -1*$strength 0 0 mix($color2,$color,$mix) inset,
+    $strength    -1*$strength 0 0 mix($color2,$color,$mix) inset;
+  
+  .ratio {
+    font-size: $ratio*1em;
+    margin: 1em*$ratio 0 0 1em/$ratio;
+    transform: rotate(-90deg);
+  }
+}
