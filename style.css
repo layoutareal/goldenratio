@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #222;
+}
+
+.ratio {
+  font-size: 322px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  border-radius: 0 0 0 100%;
+  box-shadow: -2px -2px 0 0 #909011 inset, 2px -2px 0 0 #909011 inset;
+}
+.ratio .ratio {
+  font-size: 0.61805em;
+  margin: 0.61805em 0 0 1.618em;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
